@@ -1,0 +1,33 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.streamlit/
+# Environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+
+# Dataset - large / competition-provided, do not commit.
+# Keep the folder itself (via .gitkeep) so the structure is visible.
+# If the dataset's license allows it and you want the README tracked in git,
+# add an explicit `!data/<its-readme-name>` exception yourself.
+data/*
+!data/.gitkeep
+
+# Generated reports are reproducible from the dataset - keep folder, ignore contents.
+reports/*
+!reports/.gitkeep
+
+# OS / editor cruft
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

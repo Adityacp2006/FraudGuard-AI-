@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# Phase 1 - project foundation & dataset inspection (installed now)
+# ---------------------------------------------------------------------------
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+python-dotenv>=1.0,<2.0
+tabulate>=0.9,<1.0        # renders Markdown tables for the reports
+pypdf>=4.0,<6.0           # only needed if the dataset README ships as a PDF
+pyarrow>=15.0              # fast/optional CSV engine + exact Parquet row counts
+tqdm>=4.66,<5.0            # progress bars for future long-running steps
+
+# Dev / test tooling
+pytest>=8.0,<9.0
+ruff>=0.4                  # linting (optional but recommended)
+
+# ---------------------------------------------------------------------------
+# Later phases - NOT required yet, listed here so the file is easy to extend.
+# Uncomment as each phase begins; do not install until you actually need them.
+# ---------------------------------------------------------------------------
+# pyTigerGraph>=1.6         # Phase 2: TigerGraph schema + data loading
+# langgraph                 # Phase 4: agent orchestration
+# anthropic                 # Phase 4: LLM-based reasoning / GraphRAG
+# fastapi                   # Phase 5: backend API for the frontend
+# uvicorn[standard]         # Phase 5: ASGI server
+# streamlit                 # Phase 5 (alt.): quick analyst UI

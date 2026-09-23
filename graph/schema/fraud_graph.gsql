@@ -1,0 +1,120 @@
+CREATE VERTEX Customer (
+    PRIMARY_ID customer_id STRING,
+    customer_id STRING
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX Card (
+    PRIMARY_ID card_id STRING,
+    card1 STRING,
+    card2 STRING,
+    card3 STRING,
+    card4 STRING,
+    card5 STRING,
+    card6 STRING
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX Transaction (
+    PRIMARY_ID transaction_id STRING,
+    transaction_dt INT,
+    transaction_amt DOUBLE,
+    product_cd STRING,
+    addr1 STRING,
+    addr2 STRING,
+    p_emaildomain STRING,
+    r_emaildomain STRING,
+    customer_id STRING,
+    ts DATETIME,
+    channel STRING,
+    risk_score DOUBLE
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX Device (
+    PRIMARY_ID device_id STRING,
+    device_info STRING
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX Identity (
+    PRIMARY_ID identity_id STRING,
+    device_type STRING,
+    device_info STRING
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX FraudCase (
+    PRIMARY_ID case_id STRING,
+    opened_at DATETIME,
+    trigger_type STRING,
+    trigger_text STRING,
+    risk_score DOUBLE
+) WITH primary_id_as_attribute="true";
+
+CREATE VERTEX HistoricalCase (
+    PRIMARY_ID case_id STRING,
+    customer_id STRING,
+    card_id STRING,
+    opened_at DATETIME,
+    closed_at DATETIME,
+    outcome STRING,
+    pattern STRING,
+    n_txns INT,
+    exposure_usd DOUBLE,
+    report_filed BOOL,
+    analyst_notes STRING
+) WITH primary_id_as_attribute="true";
+
+CREATE DIRECTED EDGE OWNS (
+    FROM Customer,
+    TO Card
+);
+
+CREATE DIRECTED EDGE MADE (
+    FROM Customer,
+    TO Transaction
+);
+
+CREATE DIRECTED EDGE USES_CARD (
+    FROM Transaction,
+    TO Card
+);
+
+CREATE DIRECTED EDGE USES_DEVICE (
+    FROM Transaction,
+    TO Device
+);
+
+CREATE DIRECTED EDGE HAS_IDENTITY (
+    FROM Transaction,
+    TO Identity
+);
+
+CREATE DIRECTED EDGE HAS_CASE (
+    FROM Customer,
+    TO FraudCase
+);
+
+CREATE DIRECTED EDGE INVOLVES (
+    FROM FraudCase,
+    TO Transaction
+);
+
+CREATE DIRECTED EDGE HAS_HISTORY (
+    FROM Customer,
+    TO HistoricalCase
+);
+
+CREATE GRAPH FraudInvestigationGraph (
+    Customer,
+    Card,
+    Transaction,
+    Device,
+    Identity,
+    FraudCase,
+    HistoricalCase,
+    OWNS,
+    MADE,
+    USES_CARD,
+    USES_DEVICE,
+    HAS_IDENTITY,
+    HAS_CASE,
+    INVOLVES,
+    HAS_HISTORY
+);
