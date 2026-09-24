@@ -1,0 +1,53 @@
+{
+  "transaction_id": "3464869",
+  "customer_id": "C03042",
+  "amount": 599.94,
+  "risk_score": 0.77,
+  "fraud_probability": 0.87,
+  "verdict": "LIKELY_FRAUD",
+  "channel": "online",
+  "product": "R",
+  "customer_transaction_count": 79,
+  "customer_total_spend": 11421.29,
+  "customer_average_spend": 144.57,
+  "device_type": "desktop",
+  "device_info": "Trident/7.0",
+  "shared_customers": 1868,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0615",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 174.99
+    },
+    {
+      "case_id": "CC-1313",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-3886",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 175.05
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "DECLINE_TRANSACTION",
+    "final": "DECLINE_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "L1_TEAM_LEAD",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3464869 for customer C03042 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.87. Final assessment: LIKELY_FRAUD.",
+  "case_id": "HHG-015"
+}

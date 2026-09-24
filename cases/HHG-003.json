@@ -1,0 +1,67 @@
+{
+  "transaction_id": "3530164",
+  "customer_id": "C08623",
+  "amount": 49.0,
+  "risk_score": 0.4,
+  "fraud_probability": 0.4,
+  "verdict": "UNCERTAIN",
+  "channel": "in_person",
+  "product": "W",
+  "customer_transaction_count": 1140,
+  "customer_total_spend": 147472.87,
+  "customer_average_spend": 129.36,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-1589",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-2817",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 38.96
+    },
+    {
+      "case_id": "CC-2935",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 238.0
+    },
+    {
+      "case_id": "CC-3327",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 528.69
+    },
+    {
+      "case_id": "CC-3682",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 300.51
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3530164 for customer C08623 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.40. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-003"
+}

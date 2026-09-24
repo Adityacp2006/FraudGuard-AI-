@@ -1,0 +1,67 @@
+{
+  "transaction_id": "3491361",
+  "customer_id": "C02354",
+  "amount": 39.08,
+  "risk_score": 0.48,
+  "fraud_probability": 0.48,
+  "verdict": "UNCERTAIN",
+  "channel": "in_person",
+  "product": "W",
+  "customer_transaction_count": 7091,
+  "customer_total_spend": 1000859.91,
+  "customer_average_spend": 141.15,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0255",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 1167.08
+    },
+    {
+      "case_id": "CC-0405",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-0454",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 940.94
+    },
+    {
+      "case_id": "CC-0631",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 118.17
+    },
+    {
+      "case_id": "CC-1450",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 2351.25
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3491361 for customer C02354 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.48. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-018"
+}

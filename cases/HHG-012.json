@@ -1,0 +1,49 @@
+{
+  "transaction_id": "3553342",
+  "customer_id": "C05876",
+  "amount": 30.91,
+  "risk_score": 0.55,
+  "fraud_probability": 0.55,
+  "verdict": "UNCERTAIN",
+  "channel": "in_person",
+  "product": "W",
+  "customer_transaction_count": 991,
+  "customer_total_spend": 79341.74,
+  "customer_average_spend": 80.06,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0003",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-2370",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_fraud",
+      "exposure_usd": 149.99
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3553342 for customer C05876 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.55. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-012"
+}

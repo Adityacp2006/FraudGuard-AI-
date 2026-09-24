@@ -1,0 +1,61 @@
+{
+  "transaction_id": "3514030",
+  "customer_id": "C12382",
+  "amount": 77.07,
+  "risk_score": 0.61,
+  "fraud_probability": 0.61,
+  "verdict": "UNCERTAIN",
+  "channel": "in_person",
+  "product": "W",
+  "customer_transaction_count": 422,
+  "customer_total_spend": 48783.68,
+  "customer_average_spend": 115.6,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-1066",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 170.98
+    },
+    {
+      "case_id": "CC-1673",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 199.98
+    },
+    {
+      "case_id": "CC-2964",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 171.08
+    },
+    {
+      "case_id": "CC-3587",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 49.09
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3514030 for customer C12382 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.61. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-001"
+}

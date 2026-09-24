@@ -1,0 +1,67 @@
+{
+  "transaction_id": "3558054",
+  "customer_id": "C13171",
+  "amount": 55.68,
+  "risk_score": 0.38,
+  "fraud_probability": 0.38,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 928,
+  "customer_total_spend": 50362.89,
+  "customer_average_spend": 54.27,
+  "device_type": "desktop",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0056",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 40.21
+    },
+    {
+      "case_id": "CC-0467",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 649.77
+    },
+    {
+      "case_id": "CC-0772",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 183.27
+    },
+    {
+      "case_id": "CC-1293",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_fraud",
+      "exposure_usd": 419.34
+    },
+    {
+      "case_id": "CC-1715",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 553.72
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3558054 for customer C13171 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.38. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-008"
+}

@@ -1,0 +1,36 @@
+{
+  "transaction_id": "3534820",
+  "customer_id": "C09988",
+  "amount": 59.67,
+  "risk_score": 0.37,
+  "fraud_probability": 0.37,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 61,
+  "customer_total_spend": 2550.57,
+  "customer_average_spend": 41.81,
+  "device_type": "desktop",
+  "device_info": "Windows",
+  "shared_customers": 4846,
+  "similar_prior_cases": [],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3534820 for customer C09988 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.37. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-016"
+}

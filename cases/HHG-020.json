@@ -1,0 +1,49 @@
+{
+  "transaction_id": "3509359",
+  "customer_id": "C12265",
+  "amount": 125.08,
+  "risk_score": 0.52,
+  "fraud_probability": 0.52,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "R",
+  "customer_transaction_count": 112,
+  "customer_total_spend": 21617.33,
+  "customer_average_spend": 193.01,
+  "device_type": "desktop",
+  "device_info": "Trident/7.0",
+  "shared_customers": 1868,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-2277",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 81.93
+    },
+    {
+      "case_id": "CC-2447",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 33.95
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3509359 for customer C12265 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.52. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-020"
+}

@@ -1,0 +1,55 @@
+{
+  "transaction_id": "3523199",
+  "customer_id": "C02923",
+  "amount": 100.07,
+  "risk_score": 0.54,
+  "fraud_probability": 0.54,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "R",
+  "customer_transaction_count": 92,
+  "customer_total_spend": 16193.62,
+  "customer_average_spend": 176.02,
+  "device_type": "mobile",
+  "device_info": "iOS Device",
+  "shared_customers": 3104,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-2400",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 350.99
+    },
+    {
+      "case_id": "CC-2717",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 896.08
+    },
+    {
+      "case_id": "CC-2857",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 539.97
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3523199 for customer C02923 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.54. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-005"
+}

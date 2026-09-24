@@ -1,0 +1,34 @@
+{
+  "transaction_id": "3581141",
+  "customer_id": "C08299",
+  "amount": 30.02,
+  "risk_score": 0.28,
+  "fraud_probability": 0.23,
+  "verdict": "LIKELY_LEGITIMATE",
+  "channel": "online",
+  "product": "S",
+  "customer_transaction_count": 56,
+  "customer_total_spend": 3425.37,
+  "customer_average_spend": 61.17,
+  "device_type": "desktop",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [],
+  "create_case": false,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "ALLOW_TRANSACTION",
+    "final": "ALLOW_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3581141 for customer C08299 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.23. Final assessment: LIKELY_LEGITIMATE.",
+  "case_id": "HHG-009"
+}

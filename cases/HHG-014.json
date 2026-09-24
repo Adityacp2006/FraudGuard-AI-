@@ -1,0 +1,34 @@
+{
+  "transaction_id": "3478561",
+  "customer_id": "C13487",
+  "amount": 74.96,
+  "risk_score": 0.05,
+  "fraud_probability": 0.01,
+  "verdict": "LIKELY_LEGITIMATE",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 85,
+  "customer_total_spend": 4881.62,
+  "customer_average_spend": 57.43,
+  "device_type": "mobile",
+  "device_info": "SM-G935F Build/NRD90M",
+  "shared_customers": 131,
+  "similar_prior_cases": [],
+  "create_case": false,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "ALLOW_TRANSACTION",
+    "final": "ALLOW_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3478561 for customer C13487 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.01. Final assessment: LIKELY_LEGITIMATE.",
+  "case_id": "HHG-014"
+}

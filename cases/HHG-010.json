@@ -1,0 +1,41 @@
+{
+  "transaction_id": "3506725",
+  "customer_id": "C10434",
+  "amount": 1000.03,
+  "risk_score": 0.9,
+  "fraud_probability": 0.99,
+  "verdict": "LIKELY_FRAUD",
+  "channel": "online",
+  "product": "R",
+  "customer_transaction_count": 36,
+  "customer_total_spend": 5539.2,
+  "customer_average_spend": 153.87,
+  "device_type": "desktop",
+  "device_info": "Windows",
+  "shared_customers": 4846,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0873",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "DECLINE_TRANSACTION",
+    "final": "DECLINE_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "L1_TEAM_LEAD",
+  "sar": {
+    "file": true,
+    "reason": "Likely fraud with transaction exposure above $1,000.",
+    "narrative": "Transaction 3506725 associated with customer C10434 was assessed as likely fraudulent with probability 0.99. The transaction amount was $1000.03. The case requires reporting review."
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3506725 for customer C10434 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.99. Final assessment: LIKELY_FRAUD.",
+  "case_id": "HHG-010"
+}

@@ -1,0 +1,34 @@
+{
+  "transaction_id": "3476682",
+  "customer_id": "C07297",
+  "amount": 482.12,
+  "risk_score": 0.25,
+  "fraud_probability": 0.2,
+  "verdict": "LIKELY_LEGITIMATE",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 261,
+  "customer_total_spend": 29379.1,
+  "customer_average_spend": 112.56,
+  "device_type": "desktop",
+  "device_info": "Trident/7.0",
+  "shared_customers": 1868,
+  "similar_prior_cases": [],
+  "create_case": false,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "ALLOW_TRANSACTION",
+    "final": "ALLOW_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3476682 for customer C07297 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.20. Final assessment: LIKELY_LEGITIMATE.",
+  "case_id": "HHG-006"
+}

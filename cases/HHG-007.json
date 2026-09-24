@@ -1,0 +1,65 @@
+{
+  "transaction_id": "3514948",
+  "customer_id": "C09933",
+  "amount": 111.92,
+  "risk_score": 0.87,
+  "fraud_probability": 0.97,
+  "verdict": "LIKELY_FRAUD",
+  "channel": "in_person",
+  "product": "W",
+  "customer_transaction_count": 2792,
+  "customer_total_spend": 345798.27,
+  "customer_average_spend": 123.85,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0104",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 92.02
+    },
+    {
+      "case_id": "CC-0657",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-0765",
+      "outcome": "confirmed_fraud",
+      "pattern": "out_of_region_use",
+      "exposure_usd": 1664.54
+    },
+    {
+      "case_id": "CC-1228",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 1112.65
+    },
+    {
+      "case_id": "CC-1524",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 3532.83
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "DECLINE_TRANSACTION",
+    "final": "DECLINE_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "L1_TEAM_LEAD",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3514948 for customer C09933 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.97. Final assessment: LIKELY_FRAUD.",
+  "case_id": "HHG-007"
+}

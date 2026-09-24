@@ -1,0 +1,41 @@
+{
+  "transaction_id": "3478782",
+  "customer_id": "C11891",
+  "amount": 292.36,
+  "risk_score": 0.79,
+  "fraud_probability": 0.89,
+  "verdict": "LIKELY_FRAUD",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 44,
+  "customer_total_spend": 2088.03,
+  "customer_average_spend": 47.46,
+  "device_type": "Not available",
+  "device_info": "Not available",
+  "shared_customers": 0,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-4160",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_fraud",
+      "exposure_usd": 90.54
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "DECLINE_TRANSACTION",
+    "final": "DECLINE_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "L1_TEAM_LEAD",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3478782 for customer C11891 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.89. Final assessment: LIKELY_FRAUD.",
+  "case_id": "HHG-002"
+}

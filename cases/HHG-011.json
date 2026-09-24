@@ -1,0 +1,67 @@
+{
+  "transaction_id": "3583368",
+  "customer_id": "C11923",
+  "amount": 131.3,
+  "risk_score": 0.39,
+  "fraud_probability": 0.39,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 10361,
+  "customer_total_spend": 408787.93,
+  "customer_average_spend": 39.45,
+  "device_type": "mobile",
+  "device_info": "SM-G610F Build/NRD90M",
+  "shared_customers": 6,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-0031",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 20.36
+    },
+    {
+      "case_id": "CC-0290",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_testing",
+      "exposure_usd": 144.56
+    },
+    {
+      "case_id": "CC-1056",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 1557.95
+    },
+    {
+      "case_id": "CC-2247",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_testing",
+      "exposure_usd": 4886.18
+    },
+    {
+      "case_id": "CC-2673",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_testing",
+      "exposure_usd": 1334.96
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3583368 for customer C11923 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.39. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-011"
+}

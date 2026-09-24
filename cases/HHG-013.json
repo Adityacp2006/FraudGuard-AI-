@@ -1,0 +1,59 @@
+{
+  "transaction_id": "3526826",
+  "customer_id": "C07671",
+  "amount": 35.66,
+  "risk_score": 0.76,
+  "fraud_probability": 0.86,
+  "verdict": "LIKELY_FRAUD",
+  "channel": "online",
+  "product": "C",
+  "customer_transaction_count": 1569,
+  "customer_total_spend": 176387.32,
+  "customer_average_spend": 112.42,
+  "device_type": "desktop",
+  "device_info": "Windows",
+  "shared_customers": 4846,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-1475",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 1307.98
+    },
+    {
+      "case_id": "CC-3216",
+      "outcome": "confirmed_fraud",
+      "pattern": "card_not_present_new_device",
+      "exposure_usd": 449.97
+    },
+    {
+      "case_id": "CC-3761",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    },
+    {
+      "case_id": "CC-4294",
+      "outcome": "confirmed_fraud",
+      "pattern": "account_takeover",
+      "exposure_usd": 506.01
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [],
+  "next_best_actions": {
+    "initial": "DECLINE_TRANSACTION",
+    "final": "DECLINE_TRANSACTION",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "L1_TEAM_LEAD",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3526826 for customer C07671 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.86. Final assessment: LIKELY_FRAUD.",
+  "case_id": "HHG-013"
+}

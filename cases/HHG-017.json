@@ -1,0 +1,43 @@
+{
+  "transaction_id": "3450629",
+  "customer_id": "C04570",
+  "amount": 100.09,
+  "risk_score": 0.57,
+  "fraud_probability": 0.57,
+  "verdict": "UNCERTAIN",
+  "channel": "online",
+  "product": "R",
+  "customer_transaction_count": 59,
+  "customer_total_spend": 20229.23,
+  "customer_average_spend": 342.87,
+  "device_type": "desktop",
+  "device_info": "Windows",
+  "shared_customers": 4846,
+  "similar_prior_cases": [
+    {
+      "case_id": "CC-1383",
+      "outcome": "cleared",
+      "pattern": "none",
+      "exposure_usd": 0.0
+    }
+  ],
+  "create_case": true,
+  "evidence_requests": [
+    "VERIFY_WITH_CUSTOMER"
+  ],
+  "next_best_actions": {
+    "initial": "VERIFY_WITH_CUSTOMER",
+    "final": "VERIFY_WITH_CUSTOMER",
+    "what_changed": "No change after additional evidence review."
+  },
+  "approval_route": "AUTO",
+  "sar": {
+    "file": false,
+    "reason": "No sufficient evidence for automatic SAR filing.",
+    "narrative": ""
+  },
+  "written_to_graph": false,
+  "graph_case_id": null,
+  "summary": "Transaction 3450629 for customer C04570 was investigated using transaction, customer-history, identity/device and prior-case evidence. Fraud probability is 0.57. Final assessment: UNCERTAIN.",
+  "case_id": "HHG-017"
+}
